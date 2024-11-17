@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Autism Prediction</h2>
+        <div id="question-container">
+            <div class="question">Feature 1:</div>
+            <input type="text" id="feature-input" class="input-box" required>
+            <button class="button" onclick="submitAnswer()">Next</button>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
